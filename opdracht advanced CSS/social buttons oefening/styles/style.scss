@@ -1,0 +1,124 @@
+@keyframes hover{
+    from{right: 0px;}
+    to {right:  120px;}
+  }
+$text: white;  
+
+body{
+  background-color:#c3cfe2;
+}
+
+ul{
+  display: block;
+  list-style: none;
+  position: fixed;
+  top: 40%;
+  right: -120px;
+  
+  li{
+
+    a{
+      display: block;
+      margin-right: -2px;
+      height: 60px;
+      width: 180px;
+      text-decoration: none;
+      line-height: 60px;
+      position: relative;
+    }
+
+    span{
+      display: flex;
+      position: center ;
+      margin-left: 30%;
+      padding: 0 30px 0 15px;
+      position: absolute;
+      margin-right: 10px;                        
+    }
+
+    i {
+      display: inline-block;
+      text-rendering: auto;
+      position: absolute;
+      height: auto;
+      font-size: 1.5em;
+      color: $text;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+    .blog {
+      background: #e17b77;
+      border-color: #e17b77;
+      color: $text;
+        .fa-laptop-code::before {
+        content: "\f5fc";
+        color: $text;
+        }
+      &:hover{
+        background: #e17b77, 1;
+        cursor: pointer;
+        animation: hover 1s ease-out;
+        animation-fill-mode: forwards;
+      }
+    }
+      
+    .twitter {
+      background: #3b5998;
+      border-color: #3b5998;
+      color: $text;
+      .fa-twitter::before {
+        font: var(--fa-font-brands);
+        content: "\f099";
+        color: $text;
+      }
+      &:hover {
+        background:#3b5998;
+        cursor: pointer;
+        animation: hover 1s ease-out;
+        animation-fill-mode: forwards;
+      }
+    }
+    .linkedin {
+      background: #007bb6;
+      border-color: #007bb6;
+      color: $text;
+      .fa-linkedin-in::before {
+        content: "\f0e1";
+        }
+      &:hover {
+        background: #007bb6;
+        cursor: pointer;
+        animation: hover 1s ease-out;
+        animation-fill-mode: forwards;
+      }
+    }
+    .facebook {
+      background: #3b5998;
+      border-color: #3b5998;
+      color: $text;
+      .fa-facebook-f::before {
+        content: "\f39e";
+      }  
+      &:hover {
+        background: #3b5998;
+        cursor: pointer;
+        animation: hover 1s ease-out;
+        animation-fill-mode: forwards;
+      }
+    }
+    .github {
+      background: #333 ;
+      border-color: #333 ;
+      color: $text;
+        .fa-github::before {
+            content: "\f09b";
+        }  
+        &:hover {
+          background: #333;
+          cursor: pointer;
+          animation: hover 1s ease-out;
+          animation-fill-mode: forwards;
+        }
+    }
+  }
+} 

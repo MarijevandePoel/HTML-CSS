@@ -1,0 +1,142 @@
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
+$font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+$font-size: 16px;
+$bcb:#c3cfe2;
+
+@mixin flex(){
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+*{margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bcb;
+    justify-content: center;
+    margin: 40px;
+    
+    p { 
+        font-family: $font;
+        text-align: center;
+        font-size: $font-size;    
+    }
+}    
+.container { 
+    background-color: white;
+    @include flex();
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: $box-shadow;
+    .text{
+        color: #555454;
+        margin: 20px;
+        padding: 10px;
+    }    
+    .avatar{
+        width: 125px; 
+        height: 125px;
+        margin-bottom: 0px;
+        @include flex();
+        transform: translate(57px, 20px);
+        border: 5px solid white;
+        border-radius: 50%;
+    }
+
+}
+   
+.bottom{
+    @include flex();
+    background-color: #686de0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+    height: 150px;
+    margin-top: 0px;
+    box-shadow: $box-shadow;
+    
+    .text-top{
+        align-self: center;
+        margin-top: 75px; 
+    }
+
+    .naam{
+        color: white;
+        font-family: $font;
+        font-size: $font-size;
+        text-align: center;
+        margin: 0px;
+    }    
+    .website{
+        color: #c5c5c5;
+        font-family: $font;
+        font-size: $font-size;
+        text-align: center;
+        margin: 0px;
+        text-decoration: none;
+    }   
+} 
+
+
+.parent{
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+    
+  .image{
+    display: block;
+    width: 250px;
+    height: auto;
+  } 
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      border-radius: 50%;
+      background-color: #494949;
+    }       
+
+    .parent:hover .overlay{
+        opacity: 1;
+    }    
+    .button {
+      position: absolute;
+      width: 250px;
+      left:50%;
+      top: 50%;
+      opacity: 0;
+      transition: opacity .35s ease;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .button a {
+      width: 200px;
+      align-self: center;
+      text-align: center;
+      color: white;
+      border: solid 4px white;
+      z-index: 5;
+      padding: 10px;
+      text-decoration: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .parent:hover .button {
+      opacity: 1;
+    }
+
+}
+
+
+
+  

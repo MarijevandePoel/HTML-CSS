@@ -1,0 +1,160 @@
+@-webkit-keyframes hover {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 120px;
+  }
+}
+
+@keyframes hover {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 120px;
+  }
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+ul {
+  display: block;
+  list-style: none;
+  position: fixed;
+  top: 40%;
+  right: -120px;
+}
+
+ul li a {
+  display: block;
+  margin-right: -2px;
+  height: 60px;
+  width: 180px;
+  text-decoration: none;
+  line-height: 60px;
+  position: relative;
+}
+
+ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: center;
+  margin-left: 30%;
+  padding: 0 30px 0 15px;
+  position: absolute;
+  margin-right: 10px;
+}
+
+ul li i {
+  display: inline-block;
+  text-rendering: auto;
+  position: absolute;
+  height: auto;
+  font-size: 1.5em;
+  color: white;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+ul li .blog {
+  background: #e17b77;
+  border-color: #e17b77;
+  color: white;
+}
+
+ul li .blog .fa-laptop-code::before {
+  content: "\f5fc";
+  color: white;
+}
+
+ul li .blog:hover {
+  background: #e17b77, 1;
+  cursor: pointer;
+  -webkit-animation: hover 1s ease-out;
+          animation: hover 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+ul li .twitter {
+  background: #3b5998;
+  border-color: #3b5998;
+  color: white;
+}
+
+ul li .twitter .fa-twitter::before {
+  font: var(--fa-font-brands);
+  content: "\f099";
+  color: white;
+}
+
+ul li .twitter:hover {
+  background: #3b5998;
+  cursor: pointer;
+  -webkit-animation: hover 1s ease-out;
+          animation: hover 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+ul li .linkedin {
+  background: #007bb6;
+  border-color: #007bb6;
+  color: white;
+}
+
+ul li .linkedin .fa-linkedin-in::before {
+  content: "\f0e1";
+}
+
+ul li .linkedin:hover {
+  background: #007bb6;
+  cursor: pointer;
+  -webkit-animation: hover 1s ease-out;
+          animation: hover 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+ul li .facebook {
+  background: #3b5998;
+  border-color: #3b5998;
+  color: white;
+}
+
+ul li .facebook .fa-facebook-f::before {
+  content: "\f39e";
+}
+
+ul li .facebook:hover {
+  background: #3b5998;
+  cursor: pointer;
+  -webkit-animation: hover 1s ease-out;
+          animation: hover 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+ul li .github {
+  background: #333;
+  border-color: #333;
+  color: white;
+}
+
+ul li .github .fa-github::before {
+  content: "\f09b";
+}
+
+ul li .github:hover {
+  background: #333;
+  cursor: pointer;
+  -webkit-animation: hover 1s ease-out;
+          animation: hover 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+/*# sourceMappingURL=style.css.map */
